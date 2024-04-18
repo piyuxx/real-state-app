@@ -31,7 +31,7 @@ className='bg-transparent'
        About
       </li>
       </Link>
-      <Link to='/sign-in'>
+      <Link to='/profile'>
         {currentUser ? (
       <img 
       className='rounded-full h-7 w-7'
