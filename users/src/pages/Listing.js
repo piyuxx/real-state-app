@@ -16,7 +16,6 @@ import {
 } from 'react-icons/fa';
 import Contact from '../components/Contact';
 
-// https://sabe.io/blog/javascript-format-numbers-commas#:~:text=The%20best%20way%20to%20format,format%20the%20number%20with%20commas.
 
 export default function Listing() {
     SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
@@ -70,7 +69,7 @@ export default function Listing() {
                         {/* Map over each image URL */}
                         {listing.imageUrls.map((url, index) => (
                             <SwiperSlide key={index}> {/* Use index as key */}
-                                <img src={url} alt={`Slide ${index}`} style={{ width: '100%', height: '80vh' }} />
+                                <img src={url} alt={`Slide ${index}`} style={{ width: '100%', height: '80vh' }} className='object-cover' />
                             </SwiperSlide>
                         ))}
                     </Swiper>
