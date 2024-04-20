@@ -1,24 +1,8 @@
-
 import React from 'react';
-import { Link } from 'react-q8';
-import logo from './logo.png'; // Assuming you have a logo for your real estate application
 
 const About = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
-      {/* Header Section */}
-      <header className="bg-white shadow-md">
-        <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-          <Link to="/">
-            <img src={logo} alt="Real Estate Logo" className="h-10" />
-          </Link>
-          <nav>
-            <Link to="/" className="text-gray-800 mx-2 hover:text-blue-500">Home</Link>
-            <Link to="/properties" className="text-gray-800 mx-2 hover:text-blue-500">Properties</Link>
-            <Link to="/about" className="text-blue-500 mx-2">About</Link>
-          </nav>
-        </div>
-      </header>
 
       {/* Main Content */}
       <div className="container mx-auto py-8 px-4">
@@ -35,14 +19,21 @@ const About = () => {
           <h2 className="text-2xl font-semibold mb-4">Meet Our Team</h2>
           {/* Team members */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Team member cards */}
-            {/* Example:
-            <div className="bg-white shadow-md rounded-lg p-6">
-              <img src="team-member-img.jpg" alt="Team Member" className="rounded-full w-20 h-20 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">John Doe</h3>
-              <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            {/* Piyush Sharma */}
+            <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+              <img src="https://media.licdn.com/dms/image/D4D03AQHyaV_YKhIWDw/profile-displayphoto-shrink_400_400/0/1672075946854?e=1718841600&v=beta&t=5sf9FnVniEwcM1eX6sJf1vfjZj_DV8-OfSGMPUA5RW0" alt="Piyush Sharma" className="rounded-full w-20 h-20 mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Piyush Sharma</h3>
+              <p className="text-gray-600">Real Estate Expert</p>
+              <a href="https://www.linkedin.com/in/piyush-sharma-72256022b/" className="text-blue-500 hover:underline block mt-2">LinkedIn Profile</a>
             </div>
-            */}
+
+            {/* Adarsh Singh */}
+            <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+              <img src="https://media.licdn.com/dms/image/C5103AQEt3pjo5L44Bw/profile-displayphoto-shrink_800_800/0/1567187649105?e=1718841600&v=beta&t=_gYnVJOZeOmO1UWnFWLpOhMY62qegkNTBJ3-cLs0b2Y" alt="Adarsh Singh" className="rounded-full w-20 h-20 mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Adarsh Singh</h3>
+              <p className="text-gray-600">Real Estate Consultant</p>
+              <a href="https://www.linkedin.com/in/aadarsh--singh/" className="text-blue-500 hover:underline block mt-2">LinkedIn Profile</a>
+            </div>
           </div>
         </section>
 
@@ -70,7 +61,7 @@ const About = () => {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <p className="text-gray-700">Have any questions or feedback? Feel free to reach out to us:</p>
-          <p className="text-blue-500">info@realestate.com</p>
+          <p className="text-blue-500">info@e-state.com</p>
         </section>
       </div>
     </div>
