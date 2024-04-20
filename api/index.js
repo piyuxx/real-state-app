@@ -32,7 +32,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/listing', listingRouter)
 app.use(express.static(path.join(__dirname), '/users/build'))
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'users', 'build', 'index.html'))
+    res.sendFile(path.join(__dirname, 'public'))
 })
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500;
